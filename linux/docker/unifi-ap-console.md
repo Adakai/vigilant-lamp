@@ -84,6 +84,8 @@ Remember a few different points to make this work so you can adopt devices on th
 
 Here is the [Link](https://github.com/jacobalberty/unifi-docker/blob/master/Side-Projects.md) to the documentation on unifi-docker.
 
+Below is an example of the docker run command when completed.
+
 ```
 docker run -d --init --net=host \
    --restart=unless-stopped \
@@ -95,3 +97,10 @@ docker run -d --init --net=host \
    jacobalberty/unifi
 
 ```
+
+Also remember if you want it to stop use the name of the image, in this case it is called unifi.
+So if you want to stop the machine use:
+
+`code docker stop unifi`
+
+Then you can use the docker run to restart it.
