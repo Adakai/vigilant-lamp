@@ -83,3 +83,15 @@ Remember a few different points to make this work so you can adopt devices on th
 - When launching the `code docker run` command remember to add `code --net=host`
 
 Here is the [Link](https://github.com/jacobalberty/unifi-docker/blob/master/Side-Projects.md) to the documentation on unifi-docker.
+
+```
+docker run -d --init --net=host \
+   --restart=unless-stopped \
+   -p 8080:8080 -p 8443:8443 -p 3478:3478/udp \
+   -e TZ='America/Denver' \
+   -v ~/unifi:/unifi \
+   --user unifi \
+   --name unifi \
+   jacobalberty/unifi
+
+```
