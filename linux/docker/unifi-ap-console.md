@@ -73,3 +73,13 @@ Now we can confirm that the user is now part of the docker group
 ## **Step 5:**
 
 now we can run the `code docker run hello-world` command without sudo prefix.
+
+
+### We can now access the documentation for jacobalberty/unifi-docker. 
+
+Remember a few different points to make this work so you can adopt devices on the LAN.
+
+- Configure within settings/system/other config/override inform host = true
+- When launching the `code docker run` command remember to add `code --net=host`
+
+Here is the [Link](https://github.com/jacobalberty/unifi-docker/blob/master/Side-Projects.md) to the documentation on unifi-docker.
